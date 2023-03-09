@@ -14,7 +14,7 @@ const Purchase = () => {
           Connect Wallet
         </button>
         <button className={`${styles.button} ${styles.claimable} `}>
-          Claimable Balance : 0 MCADE
+          Claimable Balance : 0 NYMO
         </button>
       </div>
 
