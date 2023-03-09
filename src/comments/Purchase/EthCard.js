@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 
 const EthCard = () => {
-  const [eth, setEth] = useState(null);
+  const [eth, setEth] = useState(0);
   const [ethMcade, setEthMcade] = useState(0);
 
   return (

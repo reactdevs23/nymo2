@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "../comments/Card/Card";
 
 import HeroSection from "../comments/HeroSection/HeroSection";
 import IcoDetails from "../comments/Ico-details/IcoDetails";
