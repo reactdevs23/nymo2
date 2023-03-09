@@ -1,5 +1,5 @@
 .purchasingContainer {
-  font-family: "Retro Gaming";
+  font-family: "MuseoModerno", cursive;
   font-weight: normal;
   background: url(../../assets/images/purchasingbg.png);
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@
   padding: 12px 25px;
   border: none;
   outline: none;
-  clip-path: polygon(
+  /* clip-path: polygon(
     0 3px,
     3px 3px,
     3px 0,
@@ -41,7 +41,7 @@
     3px 100%,
     3px calc(100% - 3px),
     0 calc(100% - 3px)
-  );
+  ); */
   cursor: pointer;
 }
 .connectWallet {
@@ -63,7 +63,7 @@
   opacity: 0.9;
   transition: 0.3s;
 }
-.pixelatedCorners {
+/* .pixelatedCorners {
   -webkit-clip-path: polygon(
     0 8px,
     4px 8px,
@@ -108,7 +108,7 @@
     4px calc(100% - 8px),
     0 calc(100% - 8px)
   );
-}
+} */
 
 .usdtCard {
   background-color: rgba(194, 30, 203, 1);
@@ -162,7 +162,7 @@
   align-items: center;
   padding: 0 10px;
   background: #fff;
-  clip-path: polygon(
+  /* clip-path: polygon(
     0 3px,
     3px 3px,
     3px 0,
@@ -175,7 +175,7 @@
     3px 100%,
     3px calc(100% - 3px),
     0 calc(100% - 3px)
-  );
+  ); */
   position: relative;
 }
 .inputWrapper {

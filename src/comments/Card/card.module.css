@@ -1,11 +1,11 @@
 .cardContainer {
   display: flex;
   justify-content: center;
-  font-family: "Retro Gaming";
+  font-family: "MuseoModerno", cursive;
   font-weight: normal;
 }
 
-.pixelated_corners {
+/* .pixelated_corners {
   -webkit-clip-path: polygon(
     0 8px,
     4px 8px,
@@ -50,7 +50,7 @@
     4px calc(100% - 8px),
     0 calc(100% - 8px)
   );
-}
+} */
 
 .main {
   background-color: #262425;
@@ -263,7 +263,7 @@
   opacity: 0.9;
 }
 
-.pixelated_corners_sm {
+/* .pixelated_corners_sm {
   -webkit-clip-path: polygon(
     0 3px,
     3px 3px,
@@ -292,7 +292,7 @@
     3px calc(100% - 3px),
     0 calc(100% - 3px)
   );
-}
+} */
 
 .buy {
   text-align: center;
