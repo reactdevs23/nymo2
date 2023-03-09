@@ -30,7 +30,6 @@
   font-weight: normal;
 }
 .main {
-  background-color: #262425;
   padding: 2px 0;
   color: white;
   display: flex;
@@ -38,7 +37,7 @@
   width: 500px;
 }
 .card_warrper {
-  background-color: #262425;
+  background-color: #001d4b;
 
   padding: 14px;
 }
@@ -52,7 +51,7 @@
   text-transform: uppercase;
 }
 .fast .text {
-  color: blue;
+  color: #ed5829;
   margin-left: 8px;
   margin-right: 10px;
 }
@@ -83,7 +82,7 @@
   line-height: 17px;
 }
 .money h1 {
-  color: #f6c929;
+  color: #ed5829;
   font-size: 26px;
   line-height: 31px;
   font-weight: 400;
@@ -137,12 +136,12 @@
 .solid_left p {
   font-size: 12px;
   font-weight: 400;
-  color: #ff5400;
+  color: #ed5829;
   margin-bottom: 5px;
 }
 
 .animated_bg {
-  background-color: #ff5400;
+  background-color: #ed5829;
   height: 10px;
   width: 100%;
   position: absolute;
@@ -228,18 +227,43 @@
   font-size: 14px;
   padding: 12px;
   border-width: 1px;
-  background-color: #e2b92a;
+  background-color: #ed5829;
   color: black;
   text-transform: uppercase;
   border-color: black;
   position: relative;
   width: 100%;
   cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 14px;
 }
 .button:hover {
   opacity: 0.9;
 }
+.button {
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
 
+  min-height: 10px;
+  min-width: 10px;
+
+  touch-action: manipulation;
+
+  transition: all 0.2s ease, visibility 0s;
+  background: #ed5829;
+  border-radius: 45px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  padding: 12px 30px;
+}
+.button:hover {
+  background: #001d4b;
+  box-shadow: 4.95px 4.95px 49px #ed5829;
+}
 .buy {
   text-align: center;
   padding: 12px 0;

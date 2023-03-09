@@ -10,7 +10,11 @@ const BuyEth = () => {
     "Purchase ETH",
   ];
   return (
-    <div className={` ${styles.pixelatedCorners} ${styles.buyEth}`}>
+    <div
+      className={` ${styles.pixelatedCorners} ${styles.buyEth}`}
+      data-aos="fade-left"
+      data-aos-duration="1500"
+    >
       <div>
         <h4 className={styles.cardTitle}>Buy $ETH Here</h4>
         <div className={styles.card}>

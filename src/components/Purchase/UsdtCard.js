@@ -1,12 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 
 const UsdtCard = () => {
   const [usdt, setUsdt] = useState(0);
   const [usdtMcade, setUsdtMcade] = useState(0);
+  useEffect(() => {
+    setUsdtMcade(usdt * 58.42);
+  }, [usdt]);
 
   return (
-    <div className={` ${styles.pixelatedCorners} ${styles.usdtCard}`}>
+    <div
+      className={` ${styles.pixelatedCorners} ${styles.usdtCard}`}
+      data-aos="fade-right"
+      data-aos-duration="1500"
+    >
       <h4 className={styles.cardTitle}>Buy With $USDT</h4>
       <div className={styles.card}>
         <div className={`${styles.inputWrapper}`}>
@@ -18,7 +25,6 @@ const UsdtCard = () => {
               value={usdt}
               onChange={(e) => {
                 setUsdt(e.target.value);
-                setUsdtMcade(usdt + 1 * 58.42);
               }}
             />{" "}
             <p className={styles.label}> USDT</p>
@@ -39,13 +45,10 @@ const UsdtCard = () => {
         </div>
         <p className={styles.value}>Your USDT balance : USDT</p>
         <p className={styles.value}>
-          {usdtMcade} MCADE = {usdt + 1} USD
+          {usdtMcade} MCADE = {usdt} USD
         </p>
         <div className={`${styles.buttonWrapper}`}>
-          <button className={`${styles.button} ${styles.connectWallet} `}>
-            {" "}
-            1. Approve
-          </button>
+          <button className={`${styles.button}  `}> 1. Approve</button>
           <button className={`${styles.button} ${styles.buyButton} `}>
             2.Buy
           </button>
