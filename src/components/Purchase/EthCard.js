@@ -3,14 +3,14 @@ import styles from "./styles.module.css";
 
 const EthCard = () => {
   const [eth, setEth] = useState(0);
-  const [ethMcade, setEthMcade] = useState(0);
+  const [ethNymo, setEthNymo] = useState(0);
   useEffect(() => {
-    setEthMcade(eth * 90487.65);
+    setEthNymo(eth * 90487.65);
   }, [eth]);
 
   return (
     <div
-      className={`  ${styles.ethCard}`}
+      className={`${styles.carContainer}  ${styles.ethCard}`}
       data-aos="fade-up"
       data-aos-duration="1500"
     >
@@ -30,22 +30,22 @@ const EthCard = () => {
             <p className={styles.label}> ETH</p>
           </div>{" "}
         </div>
-        <p className={styles.value}>{ethMcade} MCADE</p>
+        <p className={styles.value}>{ethNymo} NYMO</p>
         <div className={`${styles.inputWrapper}`}>
           <div className={`${styles.inputContainer}`}>
             <input
               className={styles.input}
               min="0"
               type="number"
-              value={ethMcade}
-              onChange={(e) => setEthMcade(e.target.value)}
+              value={ethNymo}
+              onChange={(e) => setEthNymo(e.target.value)}
             />{" "}
-            <p className={styles.label}> MCADE</p>
+            <p className={styles.label}> NYMO</p>
           </div>{" "}
         </div>
 
         <p className={styles.value}>
-          {ethMcade} MCADE = {eth} ETH
+          {ethNymo} NYMO = {eth} ETH
         </p>
       </div>{" "}
       <button className={`${styles.button} ${styles.buyButton} `}>Buy</button>

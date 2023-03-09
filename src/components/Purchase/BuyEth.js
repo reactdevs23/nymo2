@@ -11,7 +11,7 @@ const BuyEth = () => {
   ];
   return (
     <div
-      className={` ${styles.pixelatedCorners} ${styles.buyEth}`}
+      className={`  ${styles.buyEth}`}
       data-aos="fade-left"
       data-aos-duration="1500"
     >
