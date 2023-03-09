@@ -56,7 +56,7 @@ const HeroSection = () => {
 
             <div className={styles.next}>
               <div>
-                <p>$0.0155 USDT = 1 $MCADE</p>
+                <p>$0.0155 USDT = 1 $NYMO</p>
               </div>
               {/* next */}
               <div>
