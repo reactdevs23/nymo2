@@ -67,9 +67,11 @@
 
 .usdtCard {
   background-color: rgba(194, 30, 203, 1);
+  border-radius: 14px;
 }
 .ethCard {
   background-color: rgba(0, 162, 236, 1);
+  border-radius: 14px;
 }
 .buyEth {
   background: rgba(248, 98, 43, 1);
@@ -77,6 +79,7 @@
   flex-direction: column;
 
   justify-content: space-between;
+  border-radius: 14px;
 }
 
 .cardContainer {
@@ -94,6 +97,7 @@
   color: #fff;
   padding: 20px 15px;
   background-color: rgba(158, 21, 164, 0.8);
+  border-radius: 14px 14px 0 0;
 }
 .ethCard .cardTitle {
   background: rgba(2, 133, 190, 0.8);
@@ -137,7 +141,7 @@
 .input {
   border: none;
   outline: none;
-  width: 200px;
+  width: 100%;
   font-size: 22px;
   font-weight: 700;
   text-align: right;
@@ -175,5 +179,14 @@
   }
   .button {
     padding: 10px 16px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .buttonWrapper {
+    grid-template-columns: 1fr;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
   }
 }
